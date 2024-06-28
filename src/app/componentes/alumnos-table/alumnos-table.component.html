@@ -1,0 +1,63 @@
+<table mat-table [dataSource]="alumnos" class="mat-elevation-z8">
+    <!-- ID Column -->
+    <ng-container matColumnDef="Id">
+      <th mat-header-cell *matHeaderCellDef> ID </th>
+      <td mat-cell *matCellDef="let element"> {{element.Id}} </td>
+    </ng-container>
+
+    <!-- Created At Column -->
+    <ng-container matColumnDef="Matricula">
+        <th mat-header-cell *matHeaderCellDef> Matricula </th>
+        <td mat-cell *matCellDef="let element"> {{element.Matricula}} </td>
+      </ng-container>
+  
+    <!-- Title Column -->
+    <ng-container matColumnDef="Nombre">
+      <th mat-header-cell *matHeaderCellDef> Nombre </th>
+      <td mat-cell *matCellDef="let element"> {{element.Nombre}} </td>
+    </ng-container>
+  
+    <!-- Description Column -->
+    <ng-container matColumnDef="ApPaterno">
+      <th mat-header-cell *matHeaderCellDef> Apellido Paterno </th>
+      <td mat-cell *matCellDef="let element"> {{element.ApPaterno}} </td>
+    </ng-container>
+  
+    <!-- Author Column -->
+    <ng-container matColumnDef="ApMaterno">
+      <th mat-header-cell *matHeaderCellDef> Apellido Materno </th>
+      <td mat-cell *matCellDef="let element"> {{element.ApMaterno}} </td>
+    </ng-container>
+  
+    <!-- Category Column -->
+    <ng-container matColumnDef="Direccion">
+      <th mat-header-cell *matHeaderCellDef> Direccion </th>
+      <td mat-cell *matCellDef="let element"> {{element.Direccion}} </td>
+    </ng-container>
+  
+    <!-- Created At Column -->
+    <ng-container matColumnDef="Estatus">
+      <th mat-header-cell *matHeaderCellDef> Estatus </th>
+      <td mat-cell *matCellDef="let element"> {{element.Estatus}} </td>
+    </ng-container>
+
+    <!-- Created At Column -->
+    <ng-container matColumnDef="UsuarioRegistra">
+        <th mat-header-cell *matHeaderCellDef> Usuario Registra </th>
+        <td mat-cell *matCellDef="let element"> {{element.Usuario}} </td>
+      </ng-container>
+
+      <!-- Created At Column -->
+    <ng-container matColumnDef="FechaRegistro">
+        <th mat-header-cell *matHeaderCellDef> Fecha Registro </th>
+        <td mat-cell *matCellDef="let element"> {{element.FechaRegistro}} </td>
+      </ng-container>
+  
+
+  
+    <!-- Header and Row Declarations -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  
