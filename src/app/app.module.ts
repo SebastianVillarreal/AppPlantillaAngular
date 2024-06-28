@@ -9,13 +9,15 @@ import { MatTableModule } from '@angular/material/table'; // Importar MatTableMo
 import { HttpClientModule } from '@angular/common/http';
 import { BookFormComponent } from './book-form/book-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AlumnoTableComponent } from './componentes/alumnos-table/alumnos-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloWorldComponent,
     BookTableComponent,
-    BookFormComponent
+    BookFormComponent,
+    AlumnoTableComponent
   ],
   imports: [
     BrowserModule,
