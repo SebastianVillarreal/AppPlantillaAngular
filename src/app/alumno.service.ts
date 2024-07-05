@@ -6,12 +6,9 @@ interface Alumno {
   Id: string;
   Matricula: string;
   Nombre: string;
-  ApPaterno: string;
-  ApMaterno: string;
+  ApellidoPaterno: string;
+  ApellidoMaterno: string;
   Direccion: string;
-  Estatus: string;
-  Usuario: string;
-  FechaRegistra: string;
 }
 
 @Injectable({
